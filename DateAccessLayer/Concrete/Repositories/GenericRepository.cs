@@ -46,7 +46,6 @@ namespace DateAccessLayer.Concrete.Repositories
 
         public void Update(T p)
         {
-            _object.Add(p);
             c.SaveChanges();
         }
     }
