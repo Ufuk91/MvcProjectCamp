@@ -16,7 +16,7 @@
     <br /> <br />
     @Html.Label("Açıklamayı Yazınız")
     @Html.TextBoxFor(x => x.CategoryDescription)
-    
+    @Html.ValidationMessageFor(x => x.CategoryDescription)
     <br /> <br />
     <button>Kategoriyi Kaydet</button>
 
