@@ -9,8 +9,9 @@ using System.Threading.Tasks;
 
 namespace DateAccessLayer.EntityFramework
 {
-   public  class EfCategoryDal:GenericRepository<Category>,ICategoryDal
+   public  class EfCategoryDal :GenericRepository<Category>,ICategoryDal
     {
+
 
     }
 }
