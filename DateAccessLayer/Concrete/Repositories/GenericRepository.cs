@@ -20,10 +20,13 @@ namespace DateAccessLayer.Concrete.Repositories
 
         }
 
+        public EntityState State { get; private set; }
 
         public void Delete(T p)
         {
-            _object.Remove(p);
+            var deletedEntity = c.Entry(p);
+            deletedEntity.State = EntityState.Deleted;
+           // _object.Remove(p);
             c.SaveChanges();
         }
 
@@ -34,7 +37,10 @@ namespace DateAccessLayer.Concrete.Repositories
 
         public void Insert(T p)
         {
-            _object.Add(p);
+            var addedEntitiy = c.Entry(p);
+            addedEntitiy.State = EntityState.Added;
+
+            //_object.Add(p);
             c.SaveChanges();
         }
 
@@ -51,6 +57,8 @@ namespace DateAccessLayer.Concrete.Repositories
 
         public void Update(T p)
         {
+            var updatedEntity = c.Entry(p);
+            updatedEntity.State = EntityState.Modified;
             c.SaveChanges();
         }
     }
