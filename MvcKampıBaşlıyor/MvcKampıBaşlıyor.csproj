@@ -140,7 +140,10 @@
     <Compile Include="Controllers\AdminCategoryController.cs" />
     <Compile Include="Controllers\CategoryController.cs" />
     <Compile Include="Controllers\CategoryValidator.cs" />
+    <Compile Include="Controllers\ContentController.cs" />
     <Compile Include="Controllers\EfContext.cs" />
+    <Compile Include="Controllers\EfHeadingdal.cs" />
+    <Compile Include="Controllers\HeadingController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\StatisticsController.cs" />
     <Compile Include="Controllers\TestController.cs" />
@@ -2293,6 +2296,10 @@
     <Content Include="Views\Writer\Index.cshtml" />
     <Content Include="Views\Writer\AddWriter.cshtml" />
     <Content Include="Views\Writer\EditWriter.cshtml" />
+    <Content Include="Views\Heading\Index.cshtml" />
+    <Content Include="Views\Heading\AddHeading.cshtml" />
+    <Content Include="Views\Content\ContentByHeading.cshtml" />
+    <Content Include="Views\Heading\EditHeading.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

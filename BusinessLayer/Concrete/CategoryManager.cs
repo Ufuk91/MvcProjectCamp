@@ -30,6 +30,11 @@ namespace BusinessLayer.Concrete
             _categorydal.Insert(category);
         }
 
+        public object GetList()
+        {
+            throw new NotImplementedException();
+        }
+
         public void CategoryDelete(Category category)
         {
             _categorydal.Delete(category);
