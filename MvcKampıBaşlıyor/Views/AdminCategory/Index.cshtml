@@ -20,17 +20,19 @@
     </tr>
     @foreach (var item in Model)
     {
-        <tr>
+<tr>
 
-            <th>
-                @item.CategoryID
-            </th>
-            <td>@item.CategoryName</td>
-            <td>@item.CategoryDescription</td>
-            <td><a href="/AdminCategory//DeleteCategory/@item.CategoryID" class="btn btn-danger">Sil</a></td>
-            <td><a href="/Admincategory/editCategory/@item.CategoryID" class="btn btn-warning">Güncelle</a></td>
-            <td><a href="#" class="btn btn-primary">Başlıklar</a></td>
-        </tr>
+    <th>
+        @item.CategoryID
+    </th>
+    <td>@item.CategoryName</td>
+    <td>@item.CategoryDescription</td>
+    <td>@item.CategoryStatus</td>
+    <th>@item.CategoryID</th>
+    <td><a href="/AdminCategory//DeleteCategory/@item.CategoryID" class="btn btn-danger">Sil</a></td>
+    <td><a href="/Admincategory/editCategory/@item.CategoryID" class="btn btn-warning">Güncelle</a></td>
+    <td><a href="#" class="btn btn-primary">Başlıklar</a></td>
+</tr>
     }
 </table>
 <br />
