@@ -7,7 +7,10 @@ using System.Threading.Tasks;
 
 namespace DateAccessLayer.Abstract
 {
-   public interface IContentDal:IRepository<Content>
+    public interface IContentDal : IRepository<Content>
     {
+        void Insert(Contact contact);
+        void Delete(object contact);
+        void Update(Contact contact);
     }
 }
